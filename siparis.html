@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Özel Sipariş Formu | TUNCER AHŞAP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f6f0;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1250px; /* Diğer sayfalarla aynı genişliğe getirildi */
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        h1 {
+            color: #5c4033;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        .slogan {
+            text-align: center;
+            color: #8B5A2B;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        .menu {
+            text-align: center;
+            background-color: #5c4033;
+            padding: 12px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        .menu a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .menu a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            color: #5c4033;
+            border-bottom: 2px solid #f0e6d8;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"], input[type="reset"] {
+            background-color: #5c4033;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #412d24;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🪵 TUNCER AHŞAP ATÖLYESİ</h1>
+        <div class="slogan">"Hayalinizdeki ahşap tasarımı gerçeğe dönüştürelim"</div>
+        
+        <div class="menu">
+            <a href="index.html">Ana Sayfa</a> | 
+            <a href="galeri.html">Atölye & Ürün Galerisi</a> | 
+            <a href="siparis.html">Özel Sipariş Ver</a> | 
+            <a href="iletisim.html">İletişim & Konum</a>
+        </div>
+
+        <h2>Özel Mobilya ve Tasarım Sipariş Formu</h2>
+        <p>Eviniz veya iş yeriniz için istediğiniz ürünleri seçin, ölçülerinizi belirtin. Mustafa Usta sizinle hemen iletişime geçsin.</p>
+
+        <form action="#" method="POST">
+            <table border="0" cellpadding="10" width="100%">
+                <tr>
+                    <td width="25%"><b>Adınız Soyadınız:</b></td>
+                    <td><input type="text" name="adsoyad" required placeholder="Adınızı giriniz"></td>
+                </tr>
+                <tr>
+                    <td><b>E-Posta Adresiniz:</b></td>
+                    <td><input type="email" name="posta" required placeholder="ornek@mail.com"></td>
+                </tr>
+                <tr>
+                    <td><b>Telefon Numaranız:</b></td>
+                    <td><input type="tel" name="telefon" placeholder="05XX XXX XX XX"></td>
+                </tr>
+                <tr>
+                    <td><b>Ürün / Tasarım Türü:</b></td>
+                    <td>
+                        <select name="mobilya_turu">
+                            <option value="separator">Ahşap Seperatör (Oda Bölücü)</option>
+                            <option value="mutfak">Mutfak Dolabı</option>
+                            <option value="banyo">Banyo Dolabı</option>
+                            <option value="tavan">Ahşap Tavan Tasarımı</option>
+                            <option value="kahve_kosesi">Kahve Köşesi</option>
+                            <option value="tv_unitesi">TV Ünitesi</option>
+                            <option value="vestiyer">Vestiyer / Portmanto</option>
+                            <option value="somine">Şömine Dekoru</option>
+                            <option value="camasir">Çamaşır Odası Dolabı</option>
+                            <option value="diger">Diğer Özel Tasarım</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Adet:</b></td>
+                    <td><input type="number" name="adet" min="1" max="10" value="1" style="width: 100px; padding: 10px;"></td>
+                </tr>
+                <tr>
+                    <td><b>Özel Ölçü ve Detaylar:</b></td>
+                    <td>
+                        <textarea name="detay" rows="6" placeholder="İstediğiniz ölçüleri, rengi ve ahşap türünü yazın..."></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Siparişi Gönder">
+                        <input type="reset" value="Formu Temizle">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <footer>
+            <p>&copy; 2026 TUNCER AHŞAP Atölyesi. Tüm hakları saklıdır.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
